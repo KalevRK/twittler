@@ -1,8 +1,15 @@
+var visitor = 'kalevrk';
+streams.users['kalevrk'] = [];
+
 $(document).ready(function(){
-        
-        function getLatestTweetStream() {
+
+      function getLatestTweetStream() {
           var $body = $('body');
+          // Title and Tagline
           $body.html('<div id="header"><h1 id="title">twittler</h1><h4 id="tagline">we put the l in twitter</h4></div>');
+          // Write a tweet section
+          $body.append('<div id="write_tweet"> <form>Tweelt<br><textarea id="tweetTextArea" name="newMessage" placeholder="Remember that what you write here gets stored on the internet...FOREVER"></textarea><br><div id="post_tweet">Post Tweet</div></form></div>');
+          // Timeline of Tweets
           $body.append('<div id="timeline">');
           var index = streams.home.length - 1;
           while(index >= 0){
@@ -17,18 +24,24 @@ $(document).ready(function(){
           }
           $body.append('</div>');
 
+          // Event handler code for posting new tweets
+          /*$('#post_tweet').on('click', function() {
+            var message = $('#tweetTextArea').val();
+            writeTweet(message);
+            getLatestTweetStream();
+          });*/
 
-          //event handler code for username div
+          // Event handler code for username div
           // NOTE: inserted into the getLatestTweetStream function so that it would be applied
           // each time that the page is automatically refreshed
 
           // Display a specific user's timeline of their tweets if their username is clicked on
           $('.user').on('click', function() {
-          // get the username of the user that was clicked on
+          // Get the username of the user that was clicked on
           var user = $(this).text();
           user = user.substring(1, user.length);
           var userTweets = streams.users[user];
-          // build the HTML to display the list of tweets for that user
+          // Build the HTML to display the list of tweets for that user
           var $body = $('body');
           $body.html('<div id="header"><h1 id="title">twittler</h1><h4 id="tagline">we put the l in twitter</h4></div>');
           $body.append('<div id="timeline">');
@@ -54,10 +67,9 @@ $(document).ready(function(){
           $(this).removeClass("highlight");
         });
 
+    };
 
-        };
-        
-        getLatestTweetStream();
-        setInterval(getLatestTweetStream, 10000);
+    getLatestTweetStream();
+    setInterval(getLatestTweetStream, 5000);
 
 });

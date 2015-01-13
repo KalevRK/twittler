@@ -24,6 +24,29 @@ body {
 	font-family: 'Oxygen', sans-serif;
 }
 
+#write_tweet {
+	position: relative;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+#post_tweet {
+	border: 2px solid #D4CCC5;
+}
+
+textarea {
+	width: 300px;
+	height: 60px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #D4CCC5;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #757B80;
+}
+
 .tweet {
 	position: relative;
 	top: 40px;
