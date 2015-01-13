@@ -3,6 +3,7 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="jquery.timeago.js"></script>
   </head>
   <body>
     <script>
@@ -11,15 +12,19 @@
         
         function getLatestTweetStream() {
           var $body = $('body');
-          $body.html('');
+          $body.html('<div id="timeline"><ul>');
           var index = streams.home.length - 1;
           while(index >= 0){
             var tweet = streams.home[index];
-            var $tweet = $('<div></div>');
-            $tweet.text('@' + tweet.user + ' ' + tweet.created_at + ' : ' + tweet.message);
+            var $tweet = $('<li class="tweet">');
+            $tweet.append('<div class="user">@' + tweet.user + '</div>');
+            $tweet.append('<div class="timestamp"> - ' + jQuery.timeago(tweet.created_at) + '</div>');
+            $tweet.append('<div class="message">' + tweet.message + '</div>');
+            $tweet.append('</li>');
             $tweet.appendTo($body);
             index -= 1;
           }
+          $body.append('</ul></div>');
         };
 
         setInterval(getLatestTweetStream, 2000);
