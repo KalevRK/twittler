@@ -2,6 +2,10 @@ body {
 	background-color: #FFFAF0;
 }
 
+.highlight {
+	color: #00B2EE;
+}
+
 #title {
     position: relative;
     top: 10px;
