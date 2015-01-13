@@ -2,7 +2,7 @@ $(document).ready(function(){
         
         function getLatestTweetStream() {
           var $body = $('body');
-          $body.html('<div id="header"><h1 id="title">twittler</h1><h4 id="tagline">We put the l in twitter</h4></div>');
+          $body.html('<div id="header"><h1 id="title">twittler</h1><h4 id="tagline">we put the l in twitter</h4></div>');
           $body.append('<div id="timeline">');
           var index = streams.home.length - 1;
           while(index >= 0){

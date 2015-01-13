@@ -4,6 +4,7 @@
     width: 800px;
     margin-left: auto;
 	margin-right: auto;
+	font-family: 'Roboto', sans-serif;
 }
 
 #tagline {
@@ -11,6 +12,7 @@
     width: 800px;
     margin-left: auto;
 	margin-right: auto;
+	font-family: 'Oxygen', sans-serif;
 }
 
 #timeline {
@@ -32,6 +34,8 @@
 	top: 2px;
 	left: 10px;
 	vertical-align: top;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
 }
 
 .timestamp {
@@ -40,10 +44,12 @@
 	top: -15px;
 	left: 400px;
 	text-align: right;
+	font-family: 'Arvo', sans-serif;
 }
 
 .message {
 	position: relative;
 	top: -15px;
 	left: 10px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
