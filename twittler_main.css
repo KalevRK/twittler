@@ -1,3 +1,7 @@
+body {
+	background-color: #FFFAF0;
+}
+
 #title {
     position: relative;
     top: 10px;
@@ -5,6 +9,7 @@
     margin-left: auto;
 	margin-right: auto;
 	font-family: 'Roboto', sans-serif;
+	color: #00B2EE;
 }
 
 #tagline {
@@ -15,10 +20,6 @@
 	font-family: 'Oxygen', sans-serif;
 }
 
-#timeline {
-	border: 1px solid black;
-}
-
 .tweet {
 	position: relative;
 	top: 50px;
@@ -26,6 +27,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
+	background-color: #FFFFFF;
 }
 
 .user {
