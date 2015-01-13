@@ -26,10 +26,10 @@ body {
     width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	border-top: 4px solid #B08563;
-	border-bottom: 4px solid #B08563;
-	border-left: 4px solid #B08563;
-	border-right: 4px solid #B08563;
+	border-top: 3px solid #B08563;
+	border-bottom: 3px solid #B08563;
+	border-left: 3px solid #B08563;
+	border-right: 3px solid #B08563;
 	background-color: #FFFFFF;
 	padding: 5px 10px 0px;
 	margin-top: 6px;
