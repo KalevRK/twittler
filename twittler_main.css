@@ -1,7 +1,26 @@
+#title {
+    position: relative;
+    top: 10px;
+    width: 800px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#tagline {
+    position: relative;
+    width: 800px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+#timeline {
+	border: 1px solid black;
+}
+
 .tweet {
 	position: relative;
 	top: 50px;
-    width: 600px;
+    width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
@@ -9,7 +28,7 @@
 
 .user {
 	position: relative;
-	width: 290px;
+	width: 390px;
 	top: 2px;
 	left: 10px;
 	vertical-align: top;
@@ -17,9 +36,9 @@
 
 .timestamp {
 	position: relative;
-	width: 290px;
+	width: 390px;
 	top: -15px;
-	left: 300px;
+	left: 400px;
 	text-align: right;
 }
 
